@@ -39,6 +39,7 @@ module.exports = {
     },
   },
   etherscan: {
+    //"96U58P9VIZWD9SMM9J5ZYUHWNP1HHF4IF4"
     apiKey: process.env.SNOWTRACE_API_KEY, // we use an .env file to hide our Snowtrace API KEY
   },
 };

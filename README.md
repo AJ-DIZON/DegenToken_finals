@@ -1,40 +1,30 @@
-# Project Title
-
-Simple overview of use/purpose.
+# Degen Token (ERC-20): Unlocking the Future of Gaming
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+I have created a ERC20 token for Degen Gaming called Degen. This contract can mint, burn, transfer, redeem, and check tokens. The host address
+has access to both minting the tokens, and checking the balance of other players. Players have a more limited use, they can burn, redeem and
+check their own and only their own tokens.
 
-## Getting Started
+Functions:
 
-### Installing
+mint(address account, uint amount) - mints new tokens. Only the owner can create them.
+burnFunc(uint amount) - burns owned tokens. Must have more tokens than to burn.
+transferFunc(address account, uint amount) - Transfers tokens to another player. They must have more tokens than they can transfer.
+redeemFunc(uint choice) - redeems tokens for prizes. Redeemed tokens will be moved to the owner.
+checkBalanceFunc(address account) - Checks the player's balance. Only the players themselves can check.
+ownerCheck(address account) - Only the owner can check other people's balance.
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+### How to get it started
 
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+1. Clone the github repository to Remix IDE: https://remix.ethereum.org/
+2. Compile the smart contract
+3. Make sure MetaMask is open and change the enviroment to it.
+4. Deploy the contract and now you can use it.
 
 ## Authors
 
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
+Albert Josh Dizon
 
 ## License
 
